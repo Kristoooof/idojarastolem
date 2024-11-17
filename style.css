@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #003e8d;
+    background-image: url('https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65f143538c242942ee1aff53_cool%20landscapes.webp');
+    /* https://api.unsplash.com/search/photos?query=canada █ */
+    /* https://source.unsplash.com/random */
+    color: white;
+    /* font-size: 120%; */
+}
+.card{
+    background: #1088b0ae;
+    padding: 2em;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 42px;
+    width: 42px;
+    background-color: #1e21229d;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+input{
+    border: none;
+    outline: none;
+    padding: 0.6029em 0.8em;
+    border-radius: 21px;
+    background-color: #1e21229d;
+    color: white;
+    font-family: inherit;
+    font-size: 110%;
+    width: calc(100% - 100px);
+}
+::placeholder{
+    color: #ffffff88;
+}
+button:hover{
+    background-color: #444b4e9d;
+}
+.temp{
+    margin: 0;
+    margin-bottom: 0.5em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+
+}
+.description{
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 25px;
+    position: relative;
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 15px;
+}
