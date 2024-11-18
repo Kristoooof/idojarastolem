@@ -6,6 +6,8 @@ body {
     margin: 0;
     background: #003e8d;
     background-image: url('https://cdn.prod.website-files.com/63a02e61e7ffb565c30bcfc7/65f143538c242942ee1aff53_cool%20landscapes.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
     /* https://api.unsplash.com/search/photos?query=canada █ */
     /* https://source.unsplash.com/random */
     color: white;
